@@ -1,0 +1,96 @@
+@charset "UTF-8";
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #fafafa; /* Light gray background */
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    font-size: 16px;
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ffffff; /* White background for the content */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    border-radius: 10px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    color: #2E3B4E; /* Dark blue-gray for a professional tone */
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.25rem;
+    color: #6c757d; /* Muted gray for the description */
+}
+
+/* Menu */
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 18px 35px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #4CAF50; /* Fresh green for buttons */
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    width: 220px;
+    margin: 10px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+/* Hover Effect for Buttons */
+.button:hover {
+    background-color: #45a049; /* Slightly darker green for hover */
+    transform: translateY(-4px); /* Slight hover lift effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button {
+        width: 80%; /* Buttons take up more space on small screens */
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 2rem; /* Slightly smaller header text on very small screens */
+    }
+    header p {
+        font-size: 1rem; /* Smaller font for the description */
+    }
+}

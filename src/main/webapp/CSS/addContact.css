@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f7f7f7; /* Light gray background */
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    font-size: 16px;
+}
+
+/* Form Container */
+form {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #fff; /* White background for the form */
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+h2 {
+    text-align: center;
+    color: #2E3B4E; /* Dark blue-gray for the header */
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+/* Form Elements */
+div {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 1.1rem;
+    color: #555; /* Dark gray for labels */
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    color: #333;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+input:focus {
+    border-color: #4CAF50; /* Green border on focus */
+    outline: none;
+}
+
+/* Buttons */
+button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: #4CAF50; /* Fresh green */
+    text-align: center;
+    border-radius: 5px;
+    margin: 10px 5px;
+    width: auto;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: translateY(-3px); /* Slight lift effect */
+}
+
+/* Back to contact list Button */
+a[href$="/contact/list"] button {
+	margin-top: 10px;
+    background-color: #007BFF; /* Blue for back to home button */
+}
+
+
+a[href$="/contact/list"] button:hover {
+    background-color: #0056b3; /* Darker blue for hover */
+}
+
+/* Links */
+a {
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    form {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.8rem; /* Smaller header on mobile */
+    }
+
+    button {
+        width: 100%; /* Buttons take full width on small screens */
+    }
+}

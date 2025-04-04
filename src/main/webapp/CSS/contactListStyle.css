@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f7f7f7; /* Light gray background */
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff; /* White background for the container */
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    color: #2E3B4E; /* Dark blue-gray for header */
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+/* Buttons */
+button, .btn {
+    padding: 12px 25px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #4CAF50; /* Green for buttons */
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 20px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover, .btn:hover {
+    background-color: #45a049; /* Darker green for hover effect */
+    transform: translateY(-3px); /* Lift effect on hover */
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: left;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd; /* Light gray border */
+}
+
+table th {
+    background-color: #f2f2f2; /* Light gray background for table header */
+    color: #333;
+    text-align: center;
+}
+
+table td {
+    color: #555;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Alternating row colors */
+}
+
+table tr:hover {
+    background-color: #f1f1f1; /* Hover effect on table rows */
+}
+
+/* Action Links in Table */
+table td a {
+    text-decoration: none;
+    color: #007BFF; /* Blue color for action links */
+    margin-right: 10px;
+}
+
+table td a:hover {
+    text-decoration: underline;
+}
+
+/* Back to Home Button */
+a[href$="/"] button {
+	margin-top: 10px;
+    background-color: #007BFF; /* Blue for back to home button */
+}
+
+
+a[href$="/"] button:hover {
+    background-color: #0056b3; /* Darker blue for hover */
+}
+
+
+/* Back to Home Button */
+a[href$="/View/search-contact.jsp"] button {
+	margin-top: 10px;
+    background-color: #007BFF; /* Blue for back to home button */
+}
+
+
+a[href$="/View/search-contact.jsp"] button:hover {
+    background-color: #0056b3; /* Darker blue for hover */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Smaller header on mobile */
+    }
+
+    table th, table td {
+        padding: 8px 10px; /* Less padding for smaller screens */
+    }
+
+    button, .btn {
+        width: 100%; /* Buttons take up full width on small screens */
+        margin-bottom: 10px;
+    }
+}
